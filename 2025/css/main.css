@@ -203,6 +203,19 @@ div.speaker p.speaker-bio {
 	}
 }
 
+.panel-heading .toggle-icon {
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.panel-heading.collapsed .toggle-icon {
+  transform: rotate(0deg);
+}
+
+.panel-heading:not(.collapsed) .toggle-icon {
+  transform: rotate(180deg);
+}
+
 div.award {
     padding: 15px 0px 15px 25px;
 }
